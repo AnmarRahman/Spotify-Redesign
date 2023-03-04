@@ -1,6 +1,6 @@
-import Body from "./Body";
-import Right from "./Right";
-import Sidebar from "./Sidebar";
+import Body from "./Body.jsx";
+import Right from "./Right.jsx";
+import Sidebar from "./Sidebar.jsx";
 
 function Dashboard() {
   return (

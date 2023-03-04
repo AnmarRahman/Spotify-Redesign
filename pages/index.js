@@ -1,4 +1,4 @@
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../components/Dashboard.jsx";
 import Head from "next/head";
 
 export default function Home() {
