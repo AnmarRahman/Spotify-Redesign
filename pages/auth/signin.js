@@ -28,6 +28,7 @@ function Signin({ providers }) {
         height={250}
         width={600}
         className="animate-pulse object-contain"
+        alt="alt"
       />
       ;
       {Object.values(providers).map((provider) => (
