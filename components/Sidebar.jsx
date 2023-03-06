@@ -15,7 +15,7 @@ function Sidebar() {
         src="https://iili.io/HWoR6mu.png"
         width={56}
         height={56}
-        className="object-fill"
+        className="object-contain"
         alt="alt"
       />
       <div className="flex flex-col space-y-8">
