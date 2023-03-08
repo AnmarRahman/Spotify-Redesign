@@ -39,6 +39,9 @@
     @apply text-[#CECECE] bg-[#1A1A1A] text-[13px] py-3.5 px-4 rounded-2xl w-full font-bold bg-opacity-80 hover:bg-opacity-100 transition ease-out;
   }
   
+  .rightIcon {
+    @apply text-[#CCCCCC] text-xl
+  }
   .posters-container {
     display: flex;
     justify-content: space-between;
