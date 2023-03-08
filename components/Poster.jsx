@@ -32,7 +32,7 @@ function Poster({ track, chooseTrack }) {
             <BsFillPlayFill className="text-xl ml-[1px]" />
           )}
         </div>
-        <div className="text-[15px]">
+        <div className="text-[15px] bg-[#15883e]/80 group-hover:bg-[#1db954] px-3.5 py-1 rounded-xl flex flex-col justify-center">
           <h4 className="font-extrabold truncate w-44">{track.title}</h4>
           <h6>{track.artist}</h6>
         </div>

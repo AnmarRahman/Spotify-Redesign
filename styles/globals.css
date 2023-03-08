@@ -34,4 +34,27 @@
   .playerIcon {
     @apply transition ease-out transform hover:scale-105 hover:text-white;
   }
+  .btn {
+    @apply text-[#CECECE] bg-[#1A1A1A] text-[13px] py-3.5 px-4 rounded-2xl w-full font-bold bg-opacity-80 hover:bg-opacity-100 transition ease-out;
+  }
+  .posters-container {
+  display: flex;
+  justify-content: space-between;
+  transition: opacity 0.5s;
 }
+
+.posters-container.fade-out {
+  opacity: 0;
+}
+
+.posters-container.fade-in {
+  opacity: 1;
+}
+
+.poster {
+  width: 25%;
+}
+
+
+}
+
