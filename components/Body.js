@@ -1,8 +1,8 @@
 import { useSession } from "next-auth/react";
 import { useEffect, useState, useRef } from "react";
-import Poster from "./Poster.jsx";
-import Search from "./Search.jsx";
-import Track from "./Track.jsx";
+import Poster from "./Poster";
+import Search from "./Search";
+import Track from "./Track";
 
 function Body({ spotifyApi, chooseTrack }) {
   const { data: session } = useSession();

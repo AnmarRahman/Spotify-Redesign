@@ -36,10 +36,10 @@ function Right({ chooseTrack, spotifyApi }) {
       <div className="flex space-x-2 items-center justify-between">
         {/* Icons */}
         <div className="flex items-center space-x-4 border-2 border-[#262626] rounded-full h-12 py-3 px-4">
-          <HiOutlineShieldCheck className="rightIcon" />
-          <MdOutlineSettings className="rightIcon" />
+          <HiOutlineShieldCheck className="text-[#CCCCCC] text-xl" />
+          <MdOutlineSettings className="text-[#CCCCCC] text-xl" />
           <div>
-            <BiBell className="rightIcon" />
+            <BiBell className="text-[#CCCCCC] text-xl" />
           </div>
         </div>
         {/* Profile */}
