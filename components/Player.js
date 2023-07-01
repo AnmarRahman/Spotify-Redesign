@@ -13,6 +13,7 @@ function Player({ accessToken, trackUri }) {
   const [playingTrack, setPlayingTrack] = useRecoilState(playingTrackState);
 
   useEffect(() => {
+    console.log(trackUri);
     if (trackUri) {
       setPlay(true);
     }
@@ -46,7 +47,6 @@ function Player({ accessToken, trackUri }) {
         play={play}
         uris={trackUri ? [trackUri] : []}
         magnifySliderOnHover={true}
-        autoPlay={true}
       />
       {/* <PlayerWrapper accessToken={accessToken} trackUri={trackUri} /> */}
     </>

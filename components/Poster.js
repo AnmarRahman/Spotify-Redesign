@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BsFillPauseFill, BsFillPlayFill } from "react-icons/bs";
 import { useRecoilState } from "recoil";
 import { playingTrackState, playState } from "../atoms/playerAtom";
@@ -9,10 +10,16 @@ function Poster({ track, chooseTrack }) {
   const handlePlay = () => {
     chooseTrack(track);
 
-    if (track.uri === playingTrack.uri) {
+    if (track.uri == playingTrack.uri) {
       setPlay(!play);
+    } else if (track.uri != playingTrack.uri) {
+      setPlay(play);
     }
   };
+  useEffect(() => {
+    console.log(play);
+  }, [play]);
+
   return (
     <div
       className="w-[260px] h-[360px] rounded-[50px] overflow-hidden relative text-white/80 cursor-pointer hover:scale-105 hover:text-white/100 transition duration-200 ease-out group mx-auto"
