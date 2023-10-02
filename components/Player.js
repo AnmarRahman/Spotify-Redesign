@@ -47,8 +47,8 @@ function Player({ accessToken, trackUri }) {
         play={play}
         uris={trackUri ? [trackUri] : []}
         magnifySliderOnHover={true}
+        autoPlay={true}
       />
-      {/* <PlayerWrapper accessToken={accessToken} trackUri={trackUri} /> */}
     </>
   );
 }

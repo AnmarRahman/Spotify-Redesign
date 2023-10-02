@@ -10,15 +10,13 @@ function Poster({ track, chooseTrack }) {
   const handlePlay = () => {
     chooseTrack(track);
 
-    if (track.uri == playingTrack.uri) {
+    if (track.uri === playingTrack.uri) {
       setPlay(!play);
-    } else if (track.uri != playingTrack.uri) {
-      setPlay(play);
     }
   };
   useEffect(() => {
-    console.log(play);
-  }, [play]);
+    console.log(track);
+  }, [track]);
 
   return (
     <div
