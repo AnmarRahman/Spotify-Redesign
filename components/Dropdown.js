@@ -16,7 +16,7 @@ export default function Dropdown() {
             width={"44px"}
             height={"44px"}
             src={session.user.image}
-            alt=""
+            alt="https://htmlcolorcodes.com/assets/images/colors/black-color-solid-background-1920x1080.png"
             className="rounded-full  absolute -right-1 object-cover"
           />
         </Menu.Button>
