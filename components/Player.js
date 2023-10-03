@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { playingTrackState, playState } from "../atoms/playerAtom";
+// import PlayerWrapper from "./PlayerWrapper";
 import dynamic from "next/dynamic";
 
 const SpotifyPlayer = dynamic(() => import("react-spotify-web-playback"), {
@@ -12,6 +13,7 @@ function Player({ accessToken, trackUri }) {
   const [playingTrack, setPlayingTrack] = useRecoilState(playingTrackState);
 
   useEffect(() => {
+    console.log(trackUri);
     if (trackUri) {
       setPlay(true);
     }

@@ -19,6 +19,10 @@ function Dashboard() {
   const [playingTrack, setPlayingTrack] = useRecoilState(playingTrackState);
   const [showPlayer, setShowPlayer] = useState(false);
 
+  useEffect(() => {
+    setShowPlayer(true);
+  }, []);
+
   const chooseTrack = (track) => {
     setPlayingTrack(track);
   };
