@@ -3,9 +3,11 @@ import { Fragment } from "react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { LogoutIcon } from "@heroicons/react/outline";
 import { signOut, useSession } from "next-auth/react";
+import blackImage from "../public/black.png";
 
 export default function Dropdown() {
   const { data: session } = useSession();
+  console.log(session.user.image);
 
   return (
     <Menu as="div" className="w-24 h-12 relative flex items-center">
@@ -16,7 +18,7 @@ export default function Dropdown() {
             width={"44px"}
             height={"44px"}
             src={session.user.image}
-            alt="https://htmlcolorcodes.com/assets/images/colors/black-color-solid-background-1920x1080.png"
+            alt={blackImage}
             className="rounded-full  absolute -right-1 object-cover"
           />
         </Menu.Button>
